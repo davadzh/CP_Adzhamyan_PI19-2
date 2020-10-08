@@ -39,23 +39,22 @@ public class Garage {
         }
     }
 
-//    private static void compareTo(int v1, int v2)
-//    {
-//
+//    public int comparing(Map.Entry<String, List<Car>> a, Map.Entry<String, List<Car>> b) {
+//        return a.getValue().size() - b.getValue().size();
 //    }
 
     public void getCars(String sortType)
     {
-        if (cars != null)
+        if (!cars.isEmpty())
         {
             System.out.println("В гараже есть следующие модели...");
             switch (sortType)
             {
                 case "byCount":
-                    //Сортировка по количеству
+                    // Сортировка по количеству
                     break;
                 case "byPrice":
-                    //Сортировка по цене
+                    // Сортировка по цене
                     break;
                 default:
                     for (Map.Entry<String, List<Car>> entry: cars.entrySet())

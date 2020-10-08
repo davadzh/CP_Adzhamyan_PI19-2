@@ -48,5 +48,10 @@ public class Main {
         garage.addCar(hyundaiCreta1);
 
         garage.getCars("");
+
+        garage.addCar(tesla2);
+        garage.addCar(hyundaiCreta1);
+
+        garage.getCars("");
     }
 }
